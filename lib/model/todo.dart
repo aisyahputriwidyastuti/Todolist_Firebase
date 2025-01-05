@@ -1,34 +1,24 @@
 class Todo {
-  final String uid;
-  final String title;
-  final String description;
-  final bool isComplete;
+  final String nama;
+  final String deskripsi;
 
   Todo({
-    required this.uid,
-    required this.title,
-    required this.description,
-    required this.isComplete,
+    required this.nama,
+    required this.deskripsi,
   });
 }
 
 List<Todo> listdata = [
   Todo(
-    uid: '1',
-    title: 'Studi Kasus 1',
-    description: 'Membuat Program Dasar Java',
-    isComplete: true,
+    nama: 'Studi Kasus 1',
+    deskripsi: 'Membuat Program Dasar Java',
   ),
   Todo(
-    uid: '2',
-    title: 'Studi Kasus 2',
-    description: 'Membuat Studi Kasus List Makanan',
-    isComplete: false,
+    nama: 'Studi Kasus 2',
+    deskripsi: 'Membuat Studi Kasus List Makanan',
   ),
   Todo(
-    uid: '3',
-    title: 'Studi Kasus 3',
-    description: 'Membuat Aplikasi To Do List',
-    isComplete: false,
+    nama: 'Studi Kasus 3',
+    deskripsi: 'Membuat Aplikasi To Do List',
   ),
 ];

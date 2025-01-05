@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:base_todolist/view/login_page.dart';
+import 'package:base_todolist/view/login_page.dart'; // Sudah sesuai dengan struktur
+import 'package:base_todolist/service/firebase_options.dart'; // Disesuaikan dengan direktori
+import 'package:firebase_core/firebase_core.dart'; // Firebase Core
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
+    options: DefaultFirebaseOptions.currentPlatform, // File ini sudah ada di direktori "service"
   );
   runApp(const MyApp());
 }

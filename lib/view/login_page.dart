@@ -4,7 +4,7 @@ import '../todo_page.dart';
 import 'register_page.dart';
 
 class LoginPage extends StatelessWidget {
-  const LoginPage({Key? key});
+  const LoginPage({Key? key}) : super(key: key); // Parameter key ditambahkan dan diteruskan ke superclass
 
   @override
   Widget build(BuildContext context) {
@@ -92,7 +92,7 @@ class LoginPage extends StatelessWidget {
               ],
             ),
             ElevatedButton(
-              //size
+              // Button size
               style: ElevatedButton.styleFrom(
                 padding: const EdgeInsets.symmetric(vertical: 15),
               ),
